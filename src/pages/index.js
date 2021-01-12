@@ -6,7 +6,7 @@ import styled from 'styled-components'
 import Layout from '../components/Layout'
 import NavBar from '../components/Navbar'
 import Section1 from '../components/Section1'
-// import Section2 from '../components/Section2'
+import Section2 from '../components/Section2'
 // import PageBreak1 from '../components/PageBreak1'
 // import Section3 from '../components/Section3'
 
@@ -32,12 +32,12 @@ export default function Index() {
         <Layout>
           <NavBar/>
           <Section1/>
-          {/* <PageBreak1/>
+          <PageBreak1/>
           <Section2/>
-          <BreakLine lineOne/>
-          <Section3/>
-          <BreakLine lineTwo/>
-          <ContactMe/> */}
+          {/* <BreakLine lineOne/> */}
+          {/* <Section3/> */}
+          {/* <BreakLine lineTwo/> */}
+          {/* <ContactMe/> */}
         </Layout>
   )
 }
