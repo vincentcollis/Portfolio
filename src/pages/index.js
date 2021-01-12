@@ -4,7 +4,7 @@ import styled from 'styled-components'
 
 
 import Layout from '../components/Layout'
-// import NavBar from '../components/Navbar'
+import NavBar from '../components/Navbar'
 import Section1 from '../components/Section1'
 // import Section2 from '../components/Section2'
 // import PageBreak1 from '../components/PageBreak1'
@@ -30,7 +30,7 @@ const BreakLine = styled.div`
 export default function Index() {
   return (
         <Layout>
-          {/* <NavBar/> */}
+          <NavBar/>
           <Section1/>
           {/* <PageBreak1/>
           <Section2/>
