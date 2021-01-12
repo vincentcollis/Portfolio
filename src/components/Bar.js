@@ -6,7 +6,7 @@ import infinitySvg from '../images/infinity.svg'
 
 
 export default function Bar(props) {
-
+console.log(props.width)
     const InfinitySVG = styled.img`
         position: relative;
         top: 2rem;

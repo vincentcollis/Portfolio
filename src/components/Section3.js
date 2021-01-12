@@ -96,27 +96,27 @@ const Paragragh = styled.div`
 
 // Hash of skills to inject into Bar Component
 const bars = [
-    {skill:"HTML & CSS", color:"rgb(187, 191, 202)", rating:"9.0/10", width:"30em"},
-    {skill:"RUBY", color:"rgb(179, 153, 201)", rating:"8.7/10", width:"28em"},
-    {skill:"JAVASCRIPT", color:"#707070", rating:"9.5/10", width:"34em"},
-    {skill:"UX/UI DESIGN", color:"#495464", rating:"9.1/10", width:"32em"},
-    {skill:"EMPATHY", color:"#5bbcbf", rating:"", width:"75em"}
+    {skill:"HTML & CSS", color:"rgb(187, 191, 202)", rating:"9.0/10", width:"30rem"},
+    {skill:"RUBY", color:"rgb(179, 153, 201)", rating:"8.7/10", width:"28rem"},
+    {skill:"JAVASCRIPT", color:"#707070", rating:"9.5/10", width:"34rem"},
+    {skill:"UX/UI DESIGN", color:"#495464", rating:"9.1/10", width:"32rem"},
+    {skill:"EMPATHY", color:"#5bbcbf", rating:"", width:"75rem"}
 ]
 
 export default function Section3() {
-    console.log(bars[0].skill)
+    // console.log(bars[0].skill)
     return (
         <>
             <BarContainer id="skills">
                 {/* on deployment this code does not work */}
-                {/* {bars.map((x,i) => <Bar 
+                {bars.map((x,i) => <Bar 
                     key={i} skill= {x.skill} color={x.color} rating={x.rating} width={x.width}
-                />)} */}
+                />)}
 
-                <Bar key='1' skill= {bars[0].skill} color="rgb(187, 191, 202)" rating={bars[0].rating} width="30em"/>
+                {/* <Bar key='1' skill= {bars[0].skill} color="rgb(187, 191, 202)" rating={bars[0].rating} width="30em"/>
                 
                 <Bar key='2' skill= {bars[1].skill} color="rgb(179, 153, 201)" rating={bars[1].rating} width="28em"/>
-                {/* <Bar skill= {bars[2].skill} color={bars[2].color} rating={bars[2].rating} width={bars[2].width}/>
+                <Bar skill= {bars[2].skill} color={bars[2].color} rating={bars[2].rating} width={bars[2].width}/>
                 <Bar skill= {bars[3].skill} color={bars[3].color} rating={bars[3].rating} width={bars[3].width}/>
                 <Bar skill= {bars[4].skill} color={bars[4].color} rating={bars[4].rating} width={bars[4].width}/> */}
 
