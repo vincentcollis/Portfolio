@@ -10,7 +10,7 @@ import Section2 from '../components/Section2'
 import PageBreak1 from '../components/PageBreak1'
 import Section3 from '../components/Section3'
 
-// import ContactMe from '../components/ContactMe'
+import ContactMe from '../components/ContactMe'
 import "@fontsource/roboto" 
 
 const BreakLine = styled.div`
@@ -36,8 +36,8 @@ export default function Index() {
           <Section2/>
           <BreakLine lineOne/>
           <Section3/>
-          {/* <BreakLine lineTwo/> */}
-          {/* <ContactMe/> */}
+          <BreakLine lineTwo/>
+          <ContactMe/>
         </Layout>
   )
 }
