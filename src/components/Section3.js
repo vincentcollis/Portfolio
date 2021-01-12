@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react';
 import styled from 'styled-components'
 import Bar from '../components/Bar'
 import "@fontsource/roboto" 
@@ -104,7 +104,16 @@ const bars = [
 ]
 
 export default function Section3() {
-    // console.log(bars[0].skill)
+    const [render, setRender] = useState(false)
+
+    useEffect(() => {
+      // setRender(true)
+      const timeout = setTimeout(() => setRender(true), 100)
+      return () => clearTimeout(timeout)
+    }, [])
+  
+    if (!render) return null
+    
     return (
         <>
             <BarContainer id="skills">
