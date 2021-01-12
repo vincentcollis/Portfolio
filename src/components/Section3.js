@@ -104,7 +104,7 @@ const bars = [
 ]
 
 export default function Section3() {
-    
+    console.log(bars[0].skill)
     return (
         <>
             <BarContainer id="skills">
@@ -113,8 +113,9 @@ export default function Section3() {
                     key={i} skill= {x.skill} color={x.color} rating={x.rating} width={x.width}
                 />)} */}
 
-                <Bar skill= {bars[0].skill} color={bars[0].color} rating={bars[0].rating} width={bars[0].width}/>
-                <Bar skill= {bars[1].skill} color={bars[1].color} rating={bars[1].rating} width={bars[1].width}/>
+                <Bar key='1' skill= {bars[0].skill} color={bars[0].color} rating={bars[0].rating} width={bars[0].width}/>
+                
+                <Bar key='2' skill= {bars[1].skill} color={bars[1].color} rating={bars[1].rating} width={bars[1].width}/>
                 {/* <Bar skill= {bars[2].skill} color={bars[2].color} rating={bars[2].rating} width={bars[2].width}/>
                 <Bar skill= {bars[3].skill} color={bars[3].color} rating={bars[3].rating} width={bars[3].width}/>
                 <Bar skill= {bars[4].skill} color={bars[4].color} rating={bars[4].rating} width={bars[4].width}/> */}
