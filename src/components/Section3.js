@@ -94,16 +94,17 @@ const Paragragh = styled.div`
     margin: 1rem 12rem 0 0;
 `
 
+// Hash of skills to inject into Bar Component
+const bars = [
+    {skill:"HTML & CSS", color:"#bbbfca", rating:"9.0/10", width:"30rem"},
+    {skill:"RUBY", color:"#b399c9", rating:"8.7/10", width:"28rem"},
+    {skill:"JAVASCRIPT", color:"#707070", rating:"9.5/10", width:"34rem"},
+    {skill:"UX/UI DESIGN", color:"#495464", rating:"9.1/10", width:"32rem"},
+    {skill:"EMPATHY", color:"#5bbcbf", rating:"", width:"75rem"}
+]
+
 export default function Section3() {
     
-    // Hash of skills to inject into Bar Component
-    const bars = [
-        {skill:"HTML & CSS", color:"#bbbfca", rating:"9.0/10", width:"30rem"},
-        {skill:"RUBY", color:"#b399c9", rating:"8.7/10", width:"28rem"},
-        {skill:"JAVASCRIPT", color:"#707070", rating:"9.5/10", width:"34rem"},
-        {skill:"UX/UI DESIGN", color:"#495464", rating:"9.1/10", width:"32rem"},
-        {skill:"EMPATHY", color:"#5bbcbf", rating:"", width:"75rem"}
-    ]
 
         
     return (
