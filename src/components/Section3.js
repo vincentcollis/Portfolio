@@ -108,9 +108,12 @@ export default function Section3() {
     return (
         <>
             <BarContainer id="skills">
-                {bars.map((x,i) => <Bar 
+                {/* {bars.map((x,i) => <Bar 
                     key={i} skill= {x.skill} color={x.color} rating={x.rating} width={x.width}
-                />)}
+                />)} */}
+
+                <Bar skill= {bars[0].skill} color={bars[0].color} rating={bars[0].rating} width={bars[0].width}/>
+
                 <TagLine>* Empathy is the key to any successful partnership</TagLine>
             </BarContainer>
             <SectionContainer>
