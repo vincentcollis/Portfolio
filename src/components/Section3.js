@@ -96,17 +96,15 @@ const Paragragh = styled.div`
 
 // Hash of skills to inject into Bar Component
 const bars = [
-    {skill:"HTML & CSS", color:"#bbbfca", rating:"9.0/10", width:"30rem"},
-    {skill:"RUBY", color:"#b399c9", rating:"8.7/10", width:"28rem"},
-    {skill:"JAVASCRIPT", color:"#707070", rating:"9.5/10", width:"34rem"},
-    {skill:"UX/UI DESIGN", color:"#495464", rating:"9.1/10", width:"32rem"},
-    {skill:"EMPATHY", color:"#5bbcbf", rating:"", width:"75rem"}
+    {skill:"HTML & CSS", color:"rgb(187, 191, 202)", rating:"9.0/10", width:"30em"},
+    {skill:"RUBY", color:"#b399c9", rating:"8.7/10", width:"28em"},
+    {skill:"JAVASCRIPT", color:"#707070", rating:"9.5/10", width:"34em"},
+    {skill:"UX/UI DESIGN", color:"#495464", rating:"9.1/10", width:"32em"},
+    {skill:"EMPATHY", color:"#5bbcbf", rating:"", width:"75em"}
 ]
 
 export default function Section3() {
     
-
-        
     return (
         <>
             <BarContainer id="skills">
