@@ -146,7 +146,7 @@ export default function ContactMe() {
         <SectionContainer id="contact">
             <TextBox>
                 I WOULD LOVE <br/>
-                TO BE APART <br/>
+                TO BE A PART <br/>
                 OF YOUR TEAM
             </TextBox>
             <IconPalette>
