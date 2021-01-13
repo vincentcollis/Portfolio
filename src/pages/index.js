@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import * as React from "react"
 import styled from 'styled-components'
 
 
@@ -29,16 +29,7 @@ const BreakLine = styled.div`
 
 export default function Index() {
 
-  const [render, setRender] = useState(false)
-
-  useEffect(() => {
-    // setRender(true)
-    const timeout = setTimeout(() => setRender(true), 100)
-    return () => clearTimeout(timeout)
-  }, [])
-
-  if (!render) return null
-
+  
   return (
         <Layout>
           <NavBar/>

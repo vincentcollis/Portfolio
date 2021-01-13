@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react'
 import styled from 'styled-components'
-import Bar from '../components/Bar'
+import Bar1 from './bar_components/Bar1'
+import Bar2 from './bar_components/Bar2'
 import "@fontsource/roboto" 
 
 const BarContainer = styled.div`
@@ -104,24 +105,16 @@ const bars = [
 ]
 
 export default function Section3() {
-    const [render, setRender] = useState(false)
-
-    useEffect(() => {
-      // setRender(true)
-      const timeout = setTimeout(() => setRender(true), 100)
-      return () => clearTimeout(timeout)
-    }, [])
-  
-    if (!render) return null
-    
+    // console.log(bars[0].skill)
     return (
         <>
             <BarContainer id="skills">
                 {/* on deployment this code does not work */}
-                {bars.map((x,i) => <Bar 
+                {/* {bars.map((x,i) => <Bar 
                     key={i} skill= {x.skill} color={x.color} rating={x.rating} width={x.width}
-                />)}
-
+                />)} */}
+                <Bar1/>
+                <Bar2/>
                 {/* <Bar key='1' skill= {bars[0].skill} color="rgb(187, 191, 202)" rating={bars[0].rating} width="30em"/>
                 
                 <Bar key='2' skill= {bars[1].skill} color="rgb(179, 153, 201)" rating={bars[1].rating} width="28em"/>
