@@ -69,6 +69,14 @@ const Text = styled.div`
 // icons displayed in icon palette
 const iconBlocks = [
     {
+        name: "phone",
+        source: phoneIcon 
+    },
+    {
+        name: "mail",
+        source: mailIcon 
+    },
+    {
         name: "linkedIn",
         source: linkedinIcon 
     },
@@ -84,14 +92,7 @@ const iconBlocks = [
         name: "twitter",
         source: twitterIcon 
     },
-    {
-        name: "phone",
-        source: phoneIcon 
-    },
-    {
-        name: "mail",
-        source: mailIcon 
-    },
+
 ]
 
 const informationBlocks =[
