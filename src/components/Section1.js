@@ -233,7 +233,7 @@ export default function Section1() {
 
     return (
         <>
-        <SectionContainer>
+        <SectionContainer id="home">
             <Img fixed={data.file.childImageSharp.fixed} />
             <ColorPalette>
                 {colorBlockColors.map((hex,i) => <ColorBlock key={i} color = {hex}/>)}

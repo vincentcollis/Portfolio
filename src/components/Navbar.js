@@ -80,6 +80,7 @@ const Button = styled.button`
 
 export default function NavBar() {
     
+    //Navigation function
     function scroll(event){
         let key = event.target.dataset.nav
 
@@ -93,7 +94,7 @@ export default function NavBar() {
             <TopBox/>
             <HeaderLayout>
                 <Logo src={codeIcon}/>  
-                <Name> Vincent Collis </Name>
+                <Name data-nav="#home" onClick={scroll}> Vincent Collis </Name>
                 <Ul buttons>
                     <Button data-nav="#about-me" onClick={scroll}>ABOUT ME </Button>
                     <Button data-nav="#skills"  onClick={scroll}> SKILLS </Button>
