@@ -2,6 +2,9 @@ import React from 'react'
 import styled from 'styled-components'
 import Bar1 from './bar_components/Bar1'
 import Bar2 from './bar_components/Bar2'
+import Bar3 from './bar_components/Bar3'
+import Bar4 from './bar_components/Bar4'
+import Bar5 from './bar_components/Bar5'
 import "@fontsource/roboto" 
 
 const BarContainer = styled.div`
@@ -95,17 +98,19 @@ const Paragragh = styled.div`
     margin: 1rem 12rem 0 0;
 `
 
+// Removed from code because Gatsby did not injecty props properly on build. Work around was to create a new Bar component for each object. Is not DRY and will find fix in future
+
 // Hash of skills to inject into Bar Component
-const bars = [
-    {skill:"HTML & CSS", color:"rgb(187, 191, 202)", rating:"9.0/10", width:"30rem"},
-    {skill:"RUBY", color:"rgb(179, 153, 201)", rating:"8.7/10", width:"28rem"},
-    {skill:"JAVASCRIPT", color:"#707070", rating:"9.5/10", width:"34rem"},
-    {skill:"UX/UI DESIGN", color:"#495464", rating:"9.1/10", width:"32rem"},
-    {skill:"EMPATHY", color:"#5bbcbf", rating:"", width:"75rem"}
-]
+// const bars = [
+//     {skill:"HTML & CSS", color:"rgb(187, 191, 202)", rating:"9.0/10", width:"30rem"},
+//     {skill:"RUBY", color:"rgb(179, 153, 201)", rating:"8.7/10", width:"28rem"},
+//     {skill:"JAVASCRIPT", color:"#707070", rating:"9.5/10", width:"34rem"},
+//     {skill:"UX/UI DESIGN", color:"#495464", rating:"9.1/10", width:"32rem"},
+//     {skill:"EMPATHY", color:"#5bbcbf", rating:"", width:"75rem"}
+// ]
 
 export default function Section3() {
-    // console.log(bars[0].skill)
+    
     return (
         <>
             <BarContainer id="skills">
@@ -115,6 +120,9 @@ export default function Section3() {
                 />)} */}
                 <Bar1/>
                 <Bar2/>
+                <Bar3/>
+                <Bar4/>
+                <Bar5/>
                 {/* <Bar key='1' skill= {bars[0].skill} color="rgb(187, 191, 202)" rating={bars[0].rating} width="30em"/>
                 
                 <Bar key='2' skill= {bars[1].skill} color="rgb(179, 153, 201)" rating={bars[1].rating} width="28em"/>
@@ -138,10 +146,8 @@ export default function Section3() {
                         <Paragragh>
                             Our web presence is meant to drive audiences to engage, connect and share our values. Im here to help you make that connection. 
                         </Paragragh>
-
                     </TextDiv>
                 </TextContainer>
-
             </SectionContainer>
         </>
     )

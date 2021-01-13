@@ -2,7 +2,6 @@ import React from 'react'
 import styled from 'styled-components'
 import '@fontsource/roboto'
 
-import infinitySvg from '../../images/infinity.svg'
 
 
 export default function Bar() {
@@ -23,7 +22,7 @@ export default function Bar() {
         height:4rem;
         width:28rem;
         background-color: #b399c9;
-        border: 1px solid #707070;
+        border: 1px solid #000;
         filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.9));
         margin: 1rem 1.5rem 0 1rem;
     `
