@@ -2,6 +2,9 @@ import React from 'react'
 import styled from 'styled-components'
 import '@fontsource/roboto'
 
+import infinitySvg from '../../images/infinity.svg'
+
+
 export default function Bar() {
 
     const InfinitySVG = styled.img`
@@ -18,8 +21,8 @@ export default function Bar() {
 
     const StyledBar = styled.div`
         height:4rem;
-        width:30rem;
-        background-color: #bbbfca;
+        width:75rem;
+        background-color: #5bbcbf;
         border: 1px solid #000;
         filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.9));
         margin: 1rem 1.5rem 0 1rem;
@@ -49,10 +52,10 @@ export default function Bar() {
 
     return (
         <Container>
-            <StyledBar>
-                <Skill>{`HTML & CSS`}</Skill>
-            </StyledBar>
-            <Text>9.0/10</Text> 
+            <div style>
+                <Skill>{`EMPATHY`}</Skill>
+            </div>
+            <InfinitySVG src={infinitySvg} />
         </Container>
     )
 }
