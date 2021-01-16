@@ -36,7 +36,7 @@ export default function Index() {
           <div className="application">
             <Helmet>
               <title> Vincent Collis </title>
-              <meta charSet="utf-8" name = "Vincent Collis Porfolio" content ="A web applicatio dedicated to the introduce of Vincent Collis"/>
+              <meta charSet="utf-8" name = "Vincent Collis Porfolio" content ="A web application dedicated to the introduction of Vincent Collis"/>
               <link rel="canonical" href="http://mysite.com/example" />
             </Helmet>
           </div>
