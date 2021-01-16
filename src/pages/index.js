@@ -1,6 +1,7 @@
 import * as React from "react"
 import styled from 'styled-components'
 
+import { Helmet } from "react-helmet"
 
 
 import Layout from '../components/Layout'
@@ -32,6 +33,13 @@ export default function Index() {
   
   return (
         <Layout>
+          <div className="application">
+            <Helmet>
+              <title> Vincent Collis </title>
+              <meta charSet="utf-8" name = "Vincent Collis Porfolio" content ="A web applicatio dedicated to the introduce of Vincent Collis"/>
+              <link rel="canonical" href="http://mysite.com/example" />
+            </Helmet>
+          </div>
           <NavBar/>
           <Section1/>
           <PageBreak1/>
