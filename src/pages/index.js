@@ -36,11 +36,8 @@ export default function Index() {
           <div className="application">
             <Helmet>
               <title> Vincent Collis </title>
-              <meta 
-                charSet = "utf-8" 
-                name = "Vincent Collis Porfolio" 
-                description = "A web application dedicated to the introduction of Vincent Collis"
-              />
+              <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+              <meta name="description" content="Software Engineer using web technologies to build successful digital campaigns"></meta>
               <link rel="canonical" href="https://vincentcollis.com/" />
             </Helmet>
           </div>
