@@ -6,12 +6,6 @@ import '@fontsource/roboto'
 
 export default function Bar() {
 
-    const InfinitySVG = styled.img`
-        position: relative;
-        top: 2rem;
-        right: 0.5rem;
-    `
-
     const Container = styled.div`
         display:flex;
         align-items: baseline;

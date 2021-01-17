@@ -35,9 +35,12 @@ export default function Index() {
         <Layout>
           <div className="application">
             <Helmet>
-              <title> Vincent Collis </title>
+              <title> Vincent Collis Portfolio</title>
               <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-              <meta name="description" content="Software Engineer using web technologies to build successful digital campaigns"></meta>
+              
+              <meta name="description" content="Software Engineer using web technologies to build successful digital campaigns." />
+              <meta name="robots" content="noodp,noydir" />
+              <meta name="viewport" content="width=device-width, initial-scale=1"/>
               <link rel="canonical" href="https://vincentcollis.com/" />
             </Helmet>
           </div>

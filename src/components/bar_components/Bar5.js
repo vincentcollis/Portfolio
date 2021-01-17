@@ -28,16 +28,6 @@ export default function Bar() {
         margin: 1rem 1.5rem 0 1rem;
     `
 
-    const Text = styled.div`
-        font-family: Roboto;
-        font-weight: normal;
-        font-size: 16px;
-        text-align: left;
-        color: #707070;
-        position: relative;
-        top: 1.2rem;
-    `
-
     const Skill = styled.span`
         font-family: Roboto;
         font-weight: bold;

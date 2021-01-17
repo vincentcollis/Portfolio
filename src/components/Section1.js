@@ -241,9 +241,9 @@ export default function Section1() {
             <StyledDiv>
                 <Name> Vincent Collis </Name>
                 <p/>
-                <Block1> {"<"}h1{">"} FULL STACK DEVELOPER </Block1>
+                <Block1> FULL STACK DEVELOPER </Block1>
                 <p/>
-                <Block2> {"<"}h2{">"} SOFTWARE ENGINEER </Block2>
+                <Block2> SOFTWARE ENGINEER </Block2>
                 <p/>
                 <Block3> WEB DEVELOPER </Block3>
                 <p/>
